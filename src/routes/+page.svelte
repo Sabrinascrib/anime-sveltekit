@@ -68,3 +68,128 @@
 		>
 	</footer>
 </main>
+
+<style>
+	main {
+		font-family: 'Poppins', sans-serif;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0px 50px;
+		align-items: center;
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	.logo {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.logo h2 {
+		color: #000;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	form {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	input {
+		height: 30px;
+		width: 200px;
+		border: solid #000000 2px;
+		background-color: #fff;
+		padding: 2px 10px 2px 1px;
+		border-top-style: hidden;
+		border-right-style: hidden;
+		border-left-style: hidden;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	button {
+		height: 36px;
+		border: solid #000000 2px;
+		background-color: #fff;
+		padding: 2px 10px;
+		border-top-style: hidden;
+		border-right-style: hidden;
+		border-left-style: hidden;
+		margin-left: 10px;
+	}
+
+	button svg {
+		font-size: 17px;
+	}
+
+	h4 {
+		font-size: 15px;
+		text-align: center;
+		margin-top: 100px;
+		font-weight: 500;
+	}
+
+	.animes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 1500px;
+		margin: 40px auto 100px auto;
+	}
+
+	.anime {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		width: 200px;
+		height: 390px;
+		margin: 0px 20px 40px 20px;
+		border: #fff solid 10px;
+	}
+
+	.anime img {
+		width: 200px;
+		border-radius: 10px;
+	}
+
+	.anime h2 {
+		font-size: 13px;
+		font-weight: 700;
+		margin: 10px 0 0 0;
+	}
+
+	.anime p {
+		font-size: 10px;
+		color: #686868;
+		font-weight: 400;
+		margin: 5px 0 0 0;
+	}
+
+	footer {
+		text-align: center;
+		color: #999999;
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+
+	footer a {
+		color: #999999;
+	}
+
+	footer a:hover {
+		color: #747474;
+		transition-duration: 0.2s;
+	}
+</style>
