@@ -1,2 +1,27 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	// @ts-nocheck
+
+	import { onMount } from 'svelte';
+	let name = '';
+	export let animes = [];
+	onMount(() => {
+		fetch(`https://api.jikan.moe/v4/anime?q=${name}&sfw`)
+			.then((response) => response.json())
+			.then((result) => (animes = result.data));
+		// .then(result => console.log(result.data))
+	});
+
+	function handleOnSubmit() {
+		fetch(`https://api.jikan.moe/v4/anime?q=${name}&sfw`)
+			.then((response) => response.json())
+			.then((result) => (animes = result.data))
+			.then((result) => console.log(result));
+	}
+
+	function getSingleAnime(id) {
+		fetch(`https://api.jikan.moe/v4/anime/${id}`)
+			.then((response) => response.json())
+			.then((result) => (animes = result.data))
+			.then((result) => console.log(result));
+	}
+</script>
