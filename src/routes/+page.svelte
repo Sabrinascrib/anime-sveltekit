@@ -55,7 +55,10 @@
 	<div class="animes">
 		{#each animes as anime (anime.mal_id)}
 			<div on:click={getSingleAnime(anime.mal_id)} class="anime">
-				<img src={anime.images.jpg.image_url} alt={anime.title} />
+				<a href={`/anime/${anime.mal_id}`}>
+					<img src={anime.images.jpg.image_url} alt={anime.title} /></a
+				>
+
 				<h2>{anime.title}</h2>
 				<p>{anime.aired.string}</p>
 			</div>
