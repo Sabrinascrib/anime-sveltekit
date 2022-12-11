@@ -56,7 +56,11 @@
 		{#each animes as anime (anime.mal_id)}
 			<div on:click={getSingleAnime(anime.mal_id)} class="anime">
 				<a href={`/anime/${anime.mal_id}`}>
-					<img src={anime.images.jpg.image_url} alt={anime.title} /></a
+					<img
+						class="rounded-xl object-cover w-52 h-72"
+						src={anime.images.jpg.image_url}
+						alt={anime.title}
+					/></a
 				>
 
 				<h2>{anime.title}</h2>
@@ -160,11 +164,6 @@
 		height: 390px;
 		margin: 0px 20px 40px 20px;
 		border: #fff solid 10px;
-	}
-
-	.anime img {
-		width: 200px;
-		border-radius: 10px;
 	}
 
 	.anime h2 {
