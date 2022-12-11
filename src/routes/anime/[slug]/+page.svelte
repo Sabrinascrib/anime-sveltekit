@@ -1,15 +1,15 @@
 <script>
-	import { onMount } from 'svelte';
-	onMount(() => {
-		fetch(`https://api.jikan.moe/v4/anime/${mal_id}`)
-			.then((response) => response.json())
-			// .then((result) => (animes = result.data));
-			.then((result) => console.log(result.data));
-	});
+	/** @type {import('./$types').PageData} */
+	export let data;
+
+	console.log('data', data);
 </script>
 
-<section>
-	<h1>hello</h1>
-	<!-- svelte-ignore missing-declaration -->
-	<img src={anime.images.jpg.image_url} alt={anime.title} />
+<section class="flex flex-row">
+	<img class="rounded-xl" src={data.anime.data.images.jpg.image_url} alt={data.anime.data.title} />
+	<div class="">
+		<h2>{data.anime.data.title}</h2>
+		<p>{data.anime.data.synopsis}</p>
+		<p>{data.anime.data.rating}</p>
+	</div>
 </section>
