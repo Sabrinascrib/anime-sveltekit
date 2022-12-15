@@ -29,7 +29,7 @@
 <main>
 	<nav>
 		<div class="logo">
-			<h2>ramen n' chill</h2>
+			<h2 class="text-xl">ramen n' chill</h2>
 		</div>
 		<form on:submit|preventDefault={handleOnSubmit}>
 			<input type="text" name="name" bind:value={name} placeholder="Search for an anime..." />
