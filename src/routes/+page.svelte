@@ -88,7 +88,7 @@
 		padding: 0px 50px;
 		align-items: center;
 		max-width: 1500px;
-		margin: 0 auto;
+		margin: 20px auto;
 	}
 
 	.logo {
@@ -119,6 +119,7 @@
 		border-top-style: hidden;
 		border-right-style: hidden;
 		border-left-style: hidden;
+		font-size: 13px;
 	}
 
 	input:focus {
@@ -126,10 +127,10 @@
 	}
 
 	button {
-		height: 36px;
+		height: 30px;
 		border: solid #000000 2px;
 		background-color: #fff;
-		padding: 2px 10px;
+		padding: 0px 10px;
 		border-top-style: hidden;
 		border-right-style: hidden;
 		border-left-style: hidden;
