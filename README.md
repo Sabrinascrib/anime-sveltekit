@@ -11,3 +11,4 @@ A simple website where you can search for Animes and get information about them.
 - Fetching with Sveltekit
 - And much more...
  
+#
