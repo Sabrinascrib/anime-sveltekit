@@ -1,4 +1,4 @@
-### <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/teddy-bear_1f9f8.png" width="35px" /> - ANIMEFLIX
+### <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/teddy-bear_1f9f8.png" width="35px" /> ANIMEFLIX
 A simple website where you can search for Animes and get information about them.
 
 ###  <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/rocket_1f680.png" width="35px" /> Main technologies
