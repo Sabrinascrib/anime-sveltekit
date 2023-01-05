@@ -30,8 +30,11 @@
 				/>
 			</div>
 			<div class="">
+				<div class="flex flex-row">
+					<p class="font-semibold text-sm text-black italic">{data.anime.data.type}</p>
+					<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
+				</div>
 				<h2 class="text-3xl text-black uppercase mb-4 font-extrabold">{data.anime.data.title}</h2>
-				<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
 			</div>
 		</div>
 
@@ -41,7 +44,7 @@ Properties
 border-0	border-width: 0px;
 border-2"
 		>
-			<h3 class="">Synopsis</h3>
+			<h3 class="text-2xl font-bold mb-4">Synopsis</h3>
 			<p class="text-gray-600 text-base mb-4">{data.anime.data.synopsis}</p>
 			<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
 		</div>
