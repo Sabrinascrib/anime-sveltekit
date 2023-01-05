@@ -20,18 +20,29 @@
 			/></svg
 		> Back</a
 	>
-	<div class="flex flex-row place-items-center max-w-6xl mx-auto place-self-center mt-52">
-		<div class="w-1/2">
-			<img
-				class="rounded-xl h-96"
-				src={data.anime.data.images.jpg.image_url}
-				alt={data.anime.data.title}
-			/>
+	<div class="flex flex-col place-items-center max-w-6xl mx-auto place-self-center mt-52">
+		<div class="flex flex-row mb-10 rounded-sm bg-gray-100 p-10 max-w-2xl">
+			<div class="w-4/6">
+				<img
+					class="rounded-sm"
+					src={data.anime.data.images.jpg.image_url}
+					alt={data.anime.data.title}
+				/>
+			</div>
+			<div class="">
+				<h2 class="text-3xl text-black uppercase mb-4 font-extrabold">{data.anime.data.title}</h2>
+				<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
+			</div>
 		</div>
 
-		<div class=" w-1/2">
-			<h2 class="text-3xl text-black uppercase mb-4 font-extrabold">{data.anime.data.title}</h2>
-			<p class="text-gray-800 text-base mb-4">{data.anime.data.synopsis}</p>
+		<div
+			class="max-w-2xl p-8 rounded-sm border-gray-100 border-solid Class
+Properties
+border-0	border-width: 0px;
+border-2"
+		>
+			<h3 class="">Synopsis</h3>
+			<p class="text-gray-600 text-base mb-4">{data.anime.data.synopsis}</p>
 			<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
 		</div>
 	</div>
