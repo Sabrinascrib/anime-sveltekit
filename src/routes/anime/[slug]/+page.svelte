@@ -20,8 +20,8 @@
 			/></svg
 		> Back</a
 	>
-	<div class="flex flex-col place-items-center max-w-6xl mx-auto place-self-center mt-52">
-		<div class="flex flex-row mb-10 rounded-sm bg-gray-100 p-10 w-2xl">
+	<div class="flex flex-col place-items-center max-w-2xl mx-auto place-self-center mt-52">
+		<div class="flex flex-row mb-10 rounded-sm bg-gray-100 p-10 w-full">
 			<div class="w-4/6">
 				<img
 					class="rounded-sm"
@@ -43,7 +43,7 @@
 		</div>
 
 		<div
-			class="max-w-2xl p-8 rounded-sm border-gray-100 border-solid Class
+			class="w-full p-8 rounded-sm border-gray-100 border-solid Class
 Properties
 border-0	border-width: 0px;
 border-2"
