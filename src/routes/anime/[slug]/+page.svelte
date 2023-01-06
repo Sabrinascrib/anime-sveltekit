@@ -21,7 +21,7 @@
 		> Back</a
 	>
 	<div class="flex flex-col place-items-center max-w-6xl mx-auto place-self-center mt-52">
-		<div class="flex flex-row mb-10 rounded-sm bg-gray-100 p-10 max-w-2xl">
+		<div class="flex flex-row mb-10 rounded-sm bg-gray-100 p-10 w-2xl">
 			<div class="w-4/6">
 				<img
 					class="rounded-sm"
@@ -35,6 +35,10 @@
 					<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
 				</div>
 				<h2 class="text-3xl text-black uppercase mb-4 font-extrabold">{data.anime.data.title}</h2>
+				<div class="flex flex-row text-sm">
+					<span>{data.anime.data.status}</span> <span>{data.anime.data.year}</span>
+					<span>{data.anime.data.favorites}</span>
+				</div>
 			</div>
 		</div>
 
