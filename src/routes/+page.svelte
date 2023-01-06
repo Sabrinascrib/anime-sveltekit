@@ -57,13 +57,13 @@
 			<div on:click={getSingleAnime(anime.mal_id)} class="anime">
 				<a href={`/anime/${anime.mal_id}`}>
 					<img
-						class="rounded-xl object-cover w-52 h-72"
+						class="rounded-sm object-cover w-[250px] h-[400px]"
 						src={anime.images.jpg.image_url}
 						alt={anime.title}
 					/></a
 				>
 
-				<h2>{anime.title}</h2>
+				<h2 class="uppercase text-xl font-semibold max-w-[250px]">{anime.title}</h2>
 				<p>{anime.aired.string}</p>
 			</div>
 		{/each}
@@ -161,16 +161,8 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #fff;
-		width: 200px;
-		height: 390px;
 		margin: 0px 20px 40px 20px;
 		border: #fff solid 10px;
-	}
-
-	.anime h2 {
-		font-size: 13px;
-		font-weight: 700;
-		margin: 10px 0 0 0;
 	}
 
 	.anime p {
