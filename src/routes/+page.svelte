@@ -54,17 +54,20 @@
 	<h4>Animes</h4>
 	<div class="animes">
 		{#each animes as anime (anime.mal_id)}
-			<div on:click={getSingleAnime(anime.mal_id)} class="anime">
-				<a href={`/anime/${anime.mal_id}`}>
-					<img
-						class="rounded-sm object-cover w-[250px] h-[400px]"
-						src={anime.images.jpg.image_url}
-						alt={anime.title}
-					/></a
-				>
+			<div class=" rounded-sm pt-5 hover:bg-gray-100">
+				<div class="anime" on:click={getSingleAnime(anime.mal_id)}>
+					<a href={`/anime/${anime.mal_id}`}>
+						<img
+							class="rounded-sm object-cover w-[250px] h-[400px]"
+							src={anime.images.jpg.image_url}
+							alt={anime.title}
+						/></a
+					>
 
-				<h2 class="uppercase text-xl font-semibold max-w-[250px]">{anime.title}</h2>
-				<p>{anime.aired.string}</p>
+					<h2 class="uppercase text-xl font-semibold mt-4 max-w-[250px]">{anime.title}</h2>
+
+					<p>{anime.aired.string}</p>
+				</div>
 			</div>
 		{/each}
 	</div>
@@ -160,9 +163,7 @@
 	.anime {
 		display: flex;
 		flex-direction: column;
-		background-color: #fff;
 		margin: 0px 20px 40px 20px;
-		border: #fff solid 10px;
 	}
 
 	.anime p {
