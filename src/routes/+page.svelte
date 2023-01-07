@@ -1,5 +1,5 @@
 <script>
-	// @ts-nocheck
+	import ramen from '/assets/ramen.png';
 
 	import { onMount } from 'svelte';
 	let name = '';
@@ -29,6 +29,7 @@
 <main>
 	<nav>
 		<div class="logo">
+			<img src={ramen} alt="Ramen logo" />
 			<h2 class="text-xl">ramen n' chill</h2>
 		</div>
 		<form on:submit|preventDefault={handleOnSubmit}>
