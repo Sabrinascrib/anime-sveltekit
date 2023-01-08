@@ -21,10 +21,12 @@
 		> Back</a
 	>
 	<div class="flex flex-col place-items-center max-w-2xl mx-auto place-self-center mt-52">
-		<div class="flex flex-row mb-10 rounded-sm bg-gray-100 p-10 w-full">
-			<div class="w-4/6">
+		<div
+			class="flex flex-row place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
+		>
+			<div class="w-1/2">
 				<img
-					class="rounded-sm"
+					class="rounded-sm h-[400px]"
 					src={data.anime.data.images.jpg.image_url}
 					alt={data.anime.data.title}
 				/>
@@ -32,22 +34,24 @@
 			<div class="">
 				<div class="flex flex-row">
 					<p class="font-semibold text-sm text-black italic">{data.anime.data.type}</p>
+
 					<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
 				</div>
 				<h2 class="text-3xl text-black uppercase mb-4 font-extrabold">{data.anime.data.title}</h2>
-				<div class="flex flex-row text-sm">
-					<span>{data.anime.data.status}</span> <span>{data.anime.data.year}</span>
-					<span>{data.anime.data.favorites}</span>
+
+				<h3>Status</h3>
+				<div class="flex flex-row text-sm ">
+					<span class="p-1 rounded-sm text-white bg-sky-400">{data.anime.data.status}</span>
+					<span
+						class="p-1 ml-2 text-white rounded-sm bg-amber-400
+					">{data.anime.data.year}</span
+					>
+					<span class="p-1 ml-2 rounded-sm text-white bg-red-500">{data.anime.data.favorites}</span>
 				</div>
 			</div>
 		</div>
 
-		<div
-			class="w-full p-8 rounded-sm border-gray-100 border-solid Class
-Properties
-border-0	border-width: 0px;
-border-2"
-		>
+		<div class="w-full p-8 rounded-sm border-gray-100 border-solid border-2">
 			<h3 class="text-2xl font-bold mb-4">Synopsis</h3>
 			<p class="text-gray-600 text-base mb-4">{data.anime.data.synopsis}</p>
 			<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
