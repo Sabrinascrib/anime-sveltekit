@@ -1,5 +1,5 @@
 <script>
-	import ramen from '/assets/ramen.png';
+	// import ramen from '/assets/ramen.png';
 
 	import { onMount } from 'svelte';
 	let name = '';
@@ -29,12 +29,20 @@
 <main>
 	<nav>
 		<div class="logo">
-			<img src={ramen} alt="Ramen logo" />
+			<!-- <img src={ramen} alt="Ramen logo" /> -->
 			<h2 class="text-xl">ramen n' chill</h2>
 		</div>
 		<form on:submit|preventDefault={handleOnSubmit}>
-			<input type="text" name="name" bind:value={name} placeholder="Search for an anime..." />
-			<button type="submit"
+			<input
+				class="bg-gray-100 text-xs rounded-sm p-3 font-extralight focus:outline-none"
+				type="text"
+				name="name"
+				bind:value={name}
+				placeholder="Search for an anime..."
+			/>
+			<button
+				type="submit"
+				class="bg-gray-100 rounded-sm p-3 ml-3 text-sm  duration-75 hover:bg-gray-200 "
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
@@ -55,7 +63,7 @@
 	<h4>Animes</h4>
 	<div class="animes">
 		{#each animes as anime (anime.mal_id)}
-			<div class=" rounded-sm pt-5 hover:bg-gray-100">
+			<div class=" rounded-sm pt-5 duration hover:bg-gray-100">
 				<div class="anime" on:click={getSingleAnime(anime.mal_id)}>
 					<a href={`/anime/${anime.mal_id}`}>
 						<img
@@ -112,37 +120,6 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-	}
-
-	input {
-		height: 30px;
-		width: 200px;
-		border: solid #000000 2px;
-		background-color: #fff;
-		padding: 2px 10px 2px 1px;
-		border-top-style: hidden;
-		border-right-style: hidden;
-		border-left-style: hidden;
-		font-size: 13px;
-	}
-
-	input:focus {
-		outline: none;
-	}
-
-	button {
-		height: 30px;
-		border: solid #000000 2px;
-		background-color: #fff;
-		padding: 0px 10px;
-		border-top-style: hidden;
-		border-right-style: hidden;
-		border-left-style: hidden;
-		margin-left: 10px;
-	}
-
-	button svg {
-		font-size: 17px;
 	}
 
 	h4 {
