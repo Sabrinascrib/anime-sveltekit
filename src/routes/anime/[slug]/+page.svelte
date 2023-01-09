@@ -6,9 +6,9 @@
 </script>
 
 <section class="">
-	<a class="flex flex-row place-items-center text-xl ml-4 mt-4" href="/">
+	<a class="flex flex-row place-items-center text-md md:text-xl ml-4 mt-4" href="/">
 		<svg
-			class="text-4xl"
+			class="text-2xl md:text-4xl"
 			xmlns="http://www.w3.org/2000/svg"
 			width="1em"
 			height="1em"
@@ -20,13 +20,15 @@
 			/></svg
 		> Back</a
 	>
-	<div class="flex flex-col place-items-center max-w-2xl mx-auto place-self-center mt-52">
+	<div
+		class="flex flex-col place-items-center max-w-2xl mx-auto place-self-center mt-10 md:mt-52 px-5"
+	>
 		<div
-			class="flex flex-row place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
+			class="flex flex-col md:flex-row md:place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
 		>
-			<div class="w-1/2">
+			<div class=" md:w-1/2">
 				<img
-					class="rounded-sm h-[400px]"
+					class=" md:mx-0 mx-auto rounded-sm h-[400px]"
 					src={data.anime.data.images.jpg.image_url}
 					alt={data.anime.data.title}
 				/>
