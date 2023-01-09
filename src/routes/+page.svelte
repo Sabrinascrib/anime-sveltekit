@@ -80,13 +80,14 @@
 			</div>
 		{/each}
 	</div>
-
-	<footer>
-		Build by anime lover <a target="_blank" href="https://github.com/Sabrinascrib/anime-app-svelte"
-			>Sabrina Abrodi</a
-		>
-	</footer>
 </main>
+<footer class="text-center text-sm py-10">
+	Build by anime lover <a
+		target="_blank"
+		href="https://github.com/Sabrinascrib/anime-app-svelte"
+		class="text-gray-500 hover:text-gray-600">Sabrina Abrodi</a
+	>
+</footer>
 
 <style>
 	main {
@@ -149,21 +150,5 @@
 		color: #686868;
 		font-weight: 400;
 		margin: 5px 0 0 0;
-	}
-
-	footer {
-		text-align: center;
-		color: #999999;
-		font-size: 13px;
-		margin-bottom: 20px;
-	}
-
-	footer a {
-		color: #999999;
-	}
-
-	footer a:hover {
-		color: #747474;
-		transition-duration: 0.2s;
 	}
 </style>
