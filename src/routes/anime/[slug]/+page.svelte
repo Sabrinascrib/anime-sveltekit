@@ -60,3 +60,11 @@
 		</div>
 	</div>
 </section>
+
+<footer class="text-center text-sm py-10">
+	Build by anime lover <a
+		target="_blank"
+		href="https://github.com/Sabrinascrib/anime-app-svelte"
+		class="text-gray-500  hover:text-gray-600">Sabrina Abrodi</a
+	>
+</footer>
