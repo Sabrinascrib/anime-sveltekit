@@ -85,7 +85,8 @@
 	Build by anime lover <a
 		target="_blank"
 		href="https://github.com/Sabrinascrib/anime-app-svelte"
-		class="text-gray-500 duration-75 hover:text-gray-600">Sabrina Abrodi</a
+		class="text-gray-500 duration-75
+		 hover:text-gray-600">Sabrina Abrodi</a
 	>
 </footer>
 

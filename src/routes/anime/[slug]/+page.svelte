@@ -33,15 +33,15 @@
 					alt={data.anime.data.title}
 				/>
 			</div>
-			<div class="">
-				<div class="flex flex-row">
-					<p class="font-semibold text-sm text-black italic">{data.anime.data.type}</p>
-
-					<p class="font-semibold text-sm text-black italic">{data.anime.data.rating}</p>
+			<div class=" mt-8 md:mt-0 md:ml-10">
+				<div class="flex flex-row mb-3">
+					<p class="font-bold text-sm text-black">{data.anime.data.type}</p>
+					<span class="mx-2 text-black">•</span>
+					<p class="font-medium text-sm text-black">{data.anime.data.rating}</p>
 				</div>
 				<h2 class="text-3xl text-black uppercase mb-4 font-extrabold">{data.anime.data.title}</h2>
 
-				<h3>Status</h3>
+				<h3 class="mb-2">Status</h3>
 				<div class="flex flex-row text-sm ">
 					<span class="p-1 rounded-sm text-white bg-sky-400">{data.anime.data.status}</span>
 					<span
