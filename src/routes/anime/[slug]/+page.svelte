@@ -43,12 +43,14 @@
 
 				<h3 class="mb-2">Status</h3>
 				<div class="flex flex-row text-sm ">
-					<span class="p-1 rounded-sm text-white bg-sky-400">{data.anime.data.status}</span>
+					<span class="p-1 rounded-sm text-white text-xs bg-sky-400">{data.anime.data.status}</span>
 					<span
-						class="p-1 ml-2 text-white rounded-sm bg-amber-400
+						class="p-1 ml-2 text-white rounded-sm text-xs bg-amber-400
 					">{data.anime.data.year}</span
 					>
-					<span class="p-1 ml-2 rounded-sm text-white bg-red-500">{data.anime.data.favorites}</span>
+					<span class="p-1 ml-2 rounded-sm text-white text-xs bg-red-500"
+						>{data.anime.data.favorites}</span
+					>
 				</div>
 			</div>
 		</div>
