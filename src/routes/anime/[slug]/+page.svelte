@@ -33,7 +33,7 @@
 					alt={data.anime.data.title}
 				/>
 			</div>
-			<div class=" mt-8 md:mt-0 md:ml-10">
+			<div class=" mt-8 md:mt-0 md:ml-5">
 				<div class="flex flex-row mb-3">
 					<p class="font-bold text-sm text-black">{data.anime.data.type}</p>
 					<span class="mx-2 text-black">•</span>
