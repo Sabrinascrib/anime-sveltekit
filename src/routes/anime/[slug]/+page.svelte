@@ -27,11 +27,17 @@
 			class="flex flex-col md:flex-row md:place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
 		>
 			<div class=" md:w-1/2">
-				<img
-					class=" md:mx-0 mx-auto rounded-sm h-[400px]"
-					src={data.anime.data.images.jpg.image_url}
-					alt={data.anime.data.title}
-				/>
+				<button
+					on:click={() => {
+						isOverlayOpen = true;
+					}}
+				>
+					<img
+						class=" md:mx-0 mx-auto rounded-sm h-[400px]"
+						src={data.anime.data.images.jpg.image_url}
+						alt={data.anime.data.title}
+					/></button
+				>
 			</div>
 			<div class=" mt-8 md:mt-0 md:ml-5">
 				<div class="flex flex-row mb-3">
