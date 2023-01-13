@@ -30,23 +30,19 @@
 		<div
 			class="flex flex-col md:flex-row md:place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
 		>
-			<div class=" md:w-1/2">
-				<Modal
-					><Content>
-						<h1>Hello 2</h1>
-					</Content>
-					<Trigger>
-						<button>
-							<img
-								class=" md:mx-0 mx-auto rounded-sm h-[400px]"
-								src={data.anime.data.images.jpg.image_url}
-								alt={data.anime.data.title}
-							/></button
-						>
-					</Trigger>
-				</Modal>
-
-				>
+			<div class=" md:w-1/2 mx-auto">
+				<Content>
+					<h1>Hello 2</h1>
+				</Content>
+				<Trigger>
+					<button>
+						<img
+							class=" md:mx-0 mx-auto rounded-sm h-[400px]"
+							src={data.anime.data.images.jpg.image_url}
+							alt={data.anime.data.title}
+						/></button
+					>
+				</Trigger>
 			</div>
 			<div class=" mt-8 md:mt-0 md:ml-5">
 				<div class="flex flex-row mb-3">
