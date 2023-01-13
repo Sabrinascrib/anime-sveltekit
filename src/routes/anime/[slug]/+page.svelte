@@ -1,7 +1,6 @@
 <script>
 	export const prerender = true;
 
-	import { isOverlayOpen } from '';
 	/** @type {import('./$types').PageData} */
 	export let data;
 
@@ -30,12 +29,7 @@
 			class="flex flex-col md:flex-row md:place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
 		>
 			<div class=" md:w-1/2">
-				{$isOverlayOpen}
-				<button
-					on:click={() => {
-						isOverlayOpen.set(true);
-					}}
-				>
+				<button>
 					<img
 						class=" md:mx-0 mx-auto rounded-sm h-[400px]"
 						src={data.anime.data.images.jpg.image_url}
