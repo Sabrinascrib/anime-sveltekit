@@ -1,5 +1,7 @@
 <script>
-	export const prerender = true;
+	import Trigger from './../../../components/Trigger.svelte';
+	import Content from './../../../components/Content.svelte';
+	import Modal from './../../../components/Modal.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -29,12 +31,21 @@
 			class="flex flex-col md:flex-row md:place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
 		>
 			<div class=" md:w-1/2">
-				<button>
-					<img
-						class=" md:mx-0 mx-auto rounded-sm h-[400px]"
-						src={data.anime.data.images.jpg.image_url}
-						alt={data.anime.data.title}
-					/></button
+				<Modal
+					><Content>
+						<h1>Hello 2</h1>
+					</Content>
+					<Trigger>
+						<button>
+							<img
+								class=" md:mx-0 mx-auto rounded-sm h-[400px]"
+								src={data.anime.data.images.jpg.image_url}
+								alt={data.anime.data.title}
+							/></button
+						>
+					</Trigger>
+				</Modal>
+
 				>
 			</div>
 			<div class=" mt-8 md:mt-0 md:ml-5">
