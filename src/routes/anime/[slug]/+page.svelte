@@ -96,7 +96,7 @@
 <footer class="text-center text-sm py-10">
 	Build by anime lover <a
 		target="_blank"
-		href="https://github.com/Sabrinascrib/anime-app-svelte"
+		href="https://github.com/Sabrinascrib/anime-sveltekit"
 		class="text-gray-500 duration-75 hover:text-gray-600">Sabrina Abrodi</a
 	>
 </footer>
