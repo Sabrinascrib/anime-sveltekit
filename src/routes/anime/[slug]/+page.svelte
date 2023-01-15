@@ -55,7 +55,7 @@
 							/></svg
 						> -->
 				<img
-					class=" md:mx-0 mx-auto rounded-sm h-[400px] duration-75  relative hover:blur-[2px] "
+					class=" md:mx-0 mx-auto rounded-sm h-[400px] duration-75  relative "
 					src={data.anime.data.images.jpg.image_url}
 					alt={data.anime.data.title}
 				/>
