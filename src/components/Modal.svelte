@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { setContext } from 'svelte';
 	import { isOpen, id } from '../stores/store';
 	const modalId = $$props.$$slots.default[0].name;
@@ -7,4 +7,4 @@
 
 <div>
 	<slot />
-</div>
+</div> -->

@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { isOpen, id } from './../stores/store.js';
 
 	import { getContext } from 'svelte';
@@ -13,4 +13,4 @@
 	span:hover {
 		cursor: pointer;
 	}
-</style>
+</style> -->

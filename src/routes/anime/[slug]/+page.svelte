@@ -31,8 +31,14 @@
 			class="flex flex-col md:flex-row md:place-items-center justify-evenly mb-10 rounded-sm bg-gray-100 p-10 w-full"
 		>
 			<div class=" md:w-1/2 mx-auto">
-				<Content>
-					<h1>Hello 2</h1>
+				<!-- <Content>
+					<Video
+						src={`https://www.youtube.com/embed/${data.anime.data.trailer.youtube_id}`}
+						frameBorder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+						allowFullScreen
+						title="video"
+					/>
 				</Content>
 				<Trigger>
 					<button class="">
@@ -47,14 +53,15 @@
 								fill="currentColor"
 								d="m9.5 16.5l7-4.5l-7-4.5ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z"
 							/></svg
-						>
-						<img
-							class=" md:mx-0 mx-auto rounded-sm h-[400px] duration-75  relative hover:blur-[2px] "
-							src={data.anime.data.images.jpg.image_url}
-							alt={data.anime.data.title}
-						/></button
+						> -->
+				<img
+					class=" md:mx-0 mx-auto rounded-sm h-[400px] duration-75  relative hover:blur-[2px] "
+					src={data.anime.data.images.jpg.image_url}
+					alt={data.anime.data.title}
+				/>
+				<!-- </button
 					>
-				</Trigger>
+				</Trigger> -->
 			</div>
 			<div class=" mt-8 md:mt-0 md:ml-5">
 				<div class="flex flex-row mb-3">
